@@ -1,12 +1,11 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import { useParams, usePathname, useRouter } from "next/navigation";
+import {  usePathname, useRouter } from "next/navigation";
 import React, { useState } from "react";
-// import { IoMenu } from "react-icons/io5";
-import logo from "../../../public/assests/Subtract.png"; // Tell webpack this JS file uses this image
+import logo from "../../../public/assests/Subtract.png"; 
 import profileImage from "../../../public/assests/9d9eb08c28bc8c6b43f73f133f60da3c.png";
-import { FaAngleDown, FaRegBell } from "react-icons/fa";
+import {  FaRegBell } from "react-icons/fa";
 import { ChevronDown } from "lucide-react";
 
 export default function Navbar() {

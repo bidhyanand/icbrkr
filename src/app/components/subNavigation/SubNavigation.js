@@ -4,7 +4,7 @@ import Search from './Search'
 
 export default function SubNavigation() {
   return (
-    <div className='px-6 py-9 flex justify-between' >
+    <div className=' py-9 flex justify-between' >
        <div className='flex gap-3' >
        <SubNavigationTab title={"Overview"} />
         <SubNavigationTab title={"Orders"} />
