@@ -19,8 +19,8 @@ export default function Navbar() {
   const pathname = usePathname();
 
   return (
-    <div className="z-50 sticky top-0">
-      <nav className="flex justify-between py-3 px-6  z-50 h-20 shadow-md ">
+    <div className="z-50 sticky top-0  ">
+      <nav className="flex justify-between py-3 px-6  z-50 h-20 shadow-md bg-white  ">
         <div className="flex gap-32  ">
           <div className="flex gap-4 ">
             <div>
