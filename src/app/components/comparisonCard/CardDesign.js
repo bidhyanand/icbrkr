@@ -1,6 +1,7 @@
 import React from "react";
+import TrendChart from "./trendChart/TrendChart";
 
-export default function CardDesign({ title, amount, percent }) {
+export default function CardDesign({ title, amount, percent, chartComponent}) {
   // Convert percent to a number
   const percentValue = parseFloat(percent);
 
@@ -38,9 +39,10 @@ export default function CardDesign({ title, amount, percent }) {
           </text>
         </div>
 
-        <div>chart</div>
+        <div>
+        {chartComponent}
+        </div>
       </div>
     </div>
   );
-  F;
 }

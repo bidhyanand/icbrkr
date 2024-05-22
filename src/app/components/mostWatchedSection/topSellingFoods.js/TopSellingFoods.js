@@ -26,24 +26,23 @@ export default function TopSellingFoods() {
 
   return (
     <div className="w-full h-[429px] space-y-2 bg-white rounded-2xl p-4 items-center  ">
-      <div className=" sticky top-0 z-10 flex justify-between gap-2 pb-5 ">
-       <div className="flex gap-2" >
-
-       <text className="text-base font-normal">Top Selling Foods</text>
-       <icon>
-       {isSortedAscending ? (
-          <FaSortAmountDown
-            onClick={toggleSortOrder}
-            className="cursor-pointer mt-1 "
-          />
-        ) : (
-          <FaSortAmountUp
-            onClick={toggleSortOrder}
-            className="cursor-pointer mt-1 "
-          />
-        )}
-       </icon>
-       </div>
+      <div className=" sticky top-0 z-10 flex justify-between gap-2  ">
+        <div className="flex gap-2 pb-5 ">
+          <text className="text-base font-normal">Top Selling Foods</text>
+          <icon>
+            {isSortedAscending ? (
+              <FaSortAmountDown
+                onClick={toggleSortOrder}
+                className="cursor-pointer mt-1 "
+              />
+            ) : (
+              <FaSortAmountUp
+                onClick={toggleSortOrder}
+                className="cursor-pointer mt-1 "
+              />
+            )}
+          </icon>
+        </div>
 
         <div className="" >
           <SelectTool options={options} onChange={handleChange} />

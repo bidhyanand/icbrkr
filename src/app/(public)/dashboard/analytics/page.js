@@ -2,6 +2,7 @@ import Cards from '@/app/components/comparisonCard/Cards'
 import MainDashboard from '@/app/components/mainDashboard/Dashboard'
 import MostWatchedSection from '@/app/components/mostWatchedSection/MostWatchedSection'
 import SubNavigation from '@/app/components/subNavigation/SubNavigation'
+import UserReview from '@/app/components/userReview/UserReview'
 import React from 'react'
 
 
@@ -13,6 +14,7 @@ export default function Page() {
       <Cards/>
       <MainDashboard/>
       <MostWatchedSection/>
+      <UserReview/>
     </div>
   )
 }
