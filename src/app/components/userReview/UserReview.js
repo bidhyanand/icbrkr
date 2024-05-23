@@ -1,15 +1,12 @@
 import React from "react";
-import Rating from "./rating/Rating";
-import Review from "./reviews/Review";
 import Star from "../../../../public/svgComponents/Star";
-import { BarHero } from "./Chart";
 import { ProgressBar } from "@tremor/react";
 import Comment from "../../../../public/svgComponents/Comment";
 import Image from "next/image";
 import loyalCustomer1 from "../../../../public/assests/loyalCustomer1.jpg";
 import loyalCustomer2 from "../../../../public/assests/loyalCustomer12.jpg";
 
-export default function () {
+export default function UserReview () {
   return (
     <div className="grid gap-8 pb-4 w-full grid-cols-5 ">
       <div className="  col-span-2 rounded-xl h-[255px] p-4  justify-center items-center text-center bg-white">

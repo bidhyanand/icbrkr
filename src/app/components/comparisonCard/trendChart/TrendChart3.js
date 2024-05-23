@@ -2,52 +2,35 @@
 import React from "react";
 import { AreaChart, Area } from "recharts";
 
-const data = [
-{
-    name: "Page A",
-    uv: 4000,
-    pv: 2400,
-    amt: 2400,
-},
-{
-    name: "Page B",
-    uv: 3000,
-    pv: 1398,
-    amt: 2210,
-},
-{
-    name: "Page C",
-    uv: 2000,
-    pv: 9800,
-    amt: 2290,
-},
-{
-    name: "Page D",
-    uv: 2780,
-    pv: 3908,
-    amt: 2000,
-},
-{
-    name: "Page E",
-    uv: 1890,
-    pv: 4800,
-    amt: 2181,
-},
-{
-    name: "Page F",
-    uv: 2390,
-    pv: 3800,
-    amt: 2500,
-},
-{
-    name: "Page G",
-    uv: 3490,
-    pv: 4300,
-    amt: 2100,
-},
-];
+
 
 export default function TrendChart3() {
+
+    const months = [
+        "Jan",
+        "Feb",
+        "Mar",
+        "Apr",
+        "May",
+        "Jun",
+        "Jul",
+        "Aug",
+        "Sep",
+        "Oct",
+        "Nov",
+        "Dec",
+      ];
+    
+      const data = [];
+    
+      for (let i = 0; i < months.length; i++) {
+        data.push({
+          name: months[i],
+          uv: Math.floor(Math.random() * 5000) + 1000,
+          pv: Math.floor(Math.random() * 5000) + 1000,
+          amt: Math.floor(Math.random() * 3000) + 1000,
+        });
+      }
 
     const gradientColor = '#ECFDF3';
 
